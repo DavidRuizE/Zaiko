@@ -1,4 +1,6 @@
+{%load static%}
 <!DOCTYPE html>
+<link rel="stylesheet" href='{%static "css/inventario.css" %}'>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,12 +14,12 @@
     <div class="container">
         <form action="">
             <div class="mb-3">
-                <label for="buscar producto" class="form-label"> Buscar pelicula</label>
+                <label for="buscar producto" class="form-label"> Buscar Producto</label>
                 <input type="text" class="form-control" name="buscarProducto">
             </div>
             <button type="submit" class =" btn btn-primary">Buscar</button>
         </form>
-    <p>searching for {{searchTerm}}</p>
+    <p> BUSCANDO: {{searchTerm}}</p>
     <div class="row row-cols-1 row row-cols-md-3 g-4">
         {% for producto in Productos%}
         <div v-for="producto in Productos" class="col">

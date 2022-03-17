@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', inventarioViews.home),
     path('about/',inventarioViews.about),
+    path('inv/',inventarioViews.inv, name="inv"),
 
 ]
 

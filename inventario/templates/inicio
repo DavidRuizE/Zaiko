@@ -14,8 +14,8 @@
             <a href="inicio.html" src="{% static 'images/fondo.jpg' %}"></a>
             <div class="nav-links">
                 <ul>
-                    <li><a href="">INICIO</a></li>
-                    <li><a href="">INVENTARIO</a></li>
+                    <li><a href="">DIOSSS</a></li>
+                    <li><a href="{% url 'inv' %}">INVENTARIO</a></li>
                     <li><a href="">VENTAS</a></li>
                     <li><a href="">SOBRE NOSOTROS</a></li>
                 </ul>
